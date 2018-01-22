@@ -2,7 +2,9 @@
 #include <string.h>
 #include <stdio.h>
 
+/*最简单的方法，使用两次迭代，效率极低 10% */
 
+//////////////////////////////////////////////////////////////////////////
 /**
 * Note: The returned array must be malloced, assume caller calls free().
 */
@@ -11,7 +13,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 	* allocate memory for indexps
 	*/
 	int *indexp = NULL;
-	indexp = (int *)malloc(sizeof(2));
+	indexp = (int *)malloc(sizeof(int));
 	/**
 	* check if nums == null or alloc error
 	*/
