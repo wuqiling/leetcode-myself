@@ -5,22 +5,7 @@
 
 /*3层循环，效果极差*/
 
-//检测两个字符串是否对称,指定输入的字符串长度
-//对称返回 0
-//否则返回 -1
-//输入两个都为空时 返回 0
-int compareTwoString_n(char *s1, char *s2, int sLen)
-{
-	for (int i = 0; i < sLen; i++)
-	{
-		if (s1[i] != s2[sLen - i - 1])
-		{
-			return -1;
-		}
-	}
-	return 0;
-}
-
+//TODO:返回的数组，内存分配方式待优化！！！
 char *longestPalindrome(char *s)
 {
 	char *strResult = NULL;
@@ -33,6 +18,7 @@ char *longestPalindrome(char *s)
 	//一个查找左边，一个查找右边
 	char *p = s, *q = s;
 	int tmpLen = sLen;
+	int equFlag = 0, compareLen = 0;
 	for (int i = 0; i < sLen; i++)
 	{
 		tmpLen = sLen - i;
@@ -40,7 +26,18 @@ char *longestPalindrome(char *s)
 		{
 			p = s + j;
 			q = s + (tmpLen / 2 + j + (tmpLen & 0x01));
-			if (compareTwoString_n(p, q, tmpLen / 2) == 0)
+			equFlag = 1;
+			compareLen = tmpLen >> 1;
+			for (int k = 0; k < compareLen; k++)
+			{
+				if (p[k] != q[compareLen - k - 1])
+				{
+					equFlag = 0;
+					break;
+				}
+			}
+
+			if (equFlag)
 			{
 				strResult = (char *)malloc((tmpLen + 1) * sizeof(char));
 				if (strResult == NULL)
