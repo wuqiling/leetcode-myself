@@ -4,7 +4,7 @@
 
 /*根据条件最多长度95，使用笨拙的方法进行测试，效率 80%*/
 
-
+#if 0
 //////////////////////////////////////////////////////////////////////////
 
 int lengthOfLongestSubstring(char* s) {
@@ -48,7 +48,7 @@ int lengthOfLongestSubstring(char* s) {
 		/**
 		* check if *pend is in pstart to pend-1
 		*/
-		strcpy(tmp, pstart);
+		strcpy_s(tmp, pstart);
 		tmp[pend - pstart] = '\0';
 		/**
 		* not found
@@ -71,3 +71,7 @@ int lengthOfLongestSubstring(char* s) {
 	free(tmp);
 	return cntMax;
 }
+
+
+//////////////////////////////////////////////////////////////////////////
+#endif

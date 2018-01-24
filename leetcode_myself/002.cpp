@@ -12,6 +12,7 @@ struct ListNode {
 
 
 //////////////////////////////////////////////////////////////////////////
+
 /**
 * Definition for singly-linked list.
 * struct ListNode {
@@ -23,9 +24,9 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 	struct ListNode *rootNode, *currentNode, *newNode;
 	int tmp = 0;	//used for calculate numa and numb
 
-					/**
-					* check if l1==NULL or l2==NULL
-					*/
+	/**
+	* check if l1==NULL or l2==NULL
+	*/
 	if (l1 == NULL && l2 == NULL) {
 		return NULL;
 	}
@@ -39,13 +40,13 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 	/**
 	* calc l1+l2
 	*/
-	currentNode = rootNode = malloc(sizeof(struct ListNode));
+	currentNode = rootNode = (struct ListNode*)malloc(sizeof(struct ListNode));
 	if (rootNode == NULL) {
 		return NULL;
 	}
 	while (1) {
 		if (l1 != NULL && l2 != NULL) {
-			newNode = malloc(sizeof(struct ListNode));
+			newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
 			if (newNode == NULL)
 				return NULL;
 			tmp = tmp + l1->val + l2->val;
@@ -69,7 +70,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 				currentNode->next = l2;
 				break;
 			}
-			newNode = malloc(sizeof(struct ListNode));
+			newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
 			if (newNode == NULL)
 				return NULL;
 			tmp = tmp + l2->val;
@@ -85,7 +86,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 				currentNode->next = l1;
 				break;
 			}
-			newNode = malloc(sizeof(struct ListNode));
+			newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
 			if (newNode == NULL)
 				return NULL;
 			tmp = tmp + l1->val;
@@ -100,7 +101,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 			if (tmp == 0) {
 				break;
 			}
-			newNode = malloc(sizeof(struct ListNode));
+			newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
 			if (newNode == NULL)
 				return NULL;
 			newNode->val = tmp;
