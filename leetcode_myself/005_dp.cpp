@@ -9,6 +9,7 @@ char *longestPalindrome(char *s)
 	int N = strlen(s);
 	if (N <= 1)
 		return s;
+	//use pNN[i][j] to dynamic programming
 	char *pNN = (char *)malloc(N * N);
 	if (pNN == NULL)
 		return NULL;

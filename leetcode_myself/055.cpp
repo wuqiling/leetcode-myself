@@ -13,7 +13,7 @@ void printArr(const int *num, int len) {
 
 bool canJump(const int *nums, int numsSize)
 {
-	printArr(nums, numsSize);
+	//printArr(nums, numsSize);
 	if (nums == NULL || numsSize <= 0)
 		return false;
 	else if (numsSize == 1 || nums[0] >= numsSize - 1)
@@ -27,7 +27,7 @@ bool canJump(const int *nums, int numsSize)
 	}
 	for (int i = numsSize - 3; i >= 0; i--)
 	{
-		cout << "i:" << i << " num i:" << nums[i] << " num i+1:" << nums[i + 1] << " jump :" << numsSize - i - 2 << endl;
+		//cout << "i:" << i << " num i:" << nums[i] << " num i+1:" << nums[i + 1] << " jump :" << numsSize - i - 2 << endl;
 		if (nums[i] > nums[i + 1])
 		{
 			continue;
