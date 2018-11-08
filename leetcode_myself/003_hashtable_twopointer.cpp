@@ -10,13 +10,10 @@ int lengthOfLongestSubstring(char* s) {
     int repeart = 0, res = 0;
     int N = strlen(s);
     for (; end < N; end++) {
-        if (hash[s[end]]++ > 0) {
-            repeart++;
-        }
+        if (hash[s[end]]++ > 0) repeart++;
+
         while (repeart > 0) {
-            if (hash[s[begin]] > 1) {
-                repeart--;
-            }
+            if (hash[s[begin]] > 1) repeart--;
             hash[s[begin]]--;
             begin++;
         }

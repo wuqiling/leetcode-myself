@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*分别考虑4种情况，有多处if判断。此方法效率极好，战胜100% 提交者！！！*/
+
 
 struct ListNode {
     int val;
