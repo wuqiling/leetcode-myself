@@ -25,7 +25,7 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
         if (first != NULL)
             first = first->next;
         else
-            return head;
+            return head;//invalid input 
     }
 
     //case:delete the head
@@ -43,6 +43,8 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
             return next;
         }
     }
+
+    //....->p->q(to delete)->....->first->NULL
     struct ListNode *p = head;
     struct ListNode *q = head->next;
     first = first->next; //sync to q

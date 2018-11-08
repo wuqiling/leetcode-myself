@@ -13,7 +13,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 	* allocate memory for indexps
 	*/
 	int *indexp = NULL;
-	indexp = (int *)malloc(sizeof(int));
+	indexp = (int *)malloc(2*sizeof(int));
 	/**
 	* check if nums == null or alloc error
 	*/
