@@ -33,10 +33,13 @@ leetcode code by myself
 
 069:使用二分查找O(NlgN) 98%
 
+105:递归方法 100%
+
 207_dfs:Course Schedule : 图之 DFS 解法,二维 vector / map(=>采用邻接表存储图),时间:O(Node+Edge) 99%
 
 207_bfs:图之bfs,使用 queue + vector 数据结构, 采用邻接表存储图,时间:O(Node+Edge)  99%
 
+380:Insert Delete GetRandom O(1):使用哈希表和数组 99%
+
 593:较直接的判断方式,第一时间不一定能想到 100%
 
-105:递归方法 100%
