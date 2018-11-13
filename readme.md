@@ -15,6 +15,7 @@ leetcode code myself
 ||003|暴力搜索|O(N^2)| 51%
 ||003_hashmap|使用字符值建立哈希表| O(N^2)  |51%
 ||003_hashtable_twopointer|建立哈希表，并使用双指针求解,每个字符最多遍历2次| O(N) |100%
+|004|004_BinarySearch|二分查找|O(log(min(m+n)))|99%
 |005|Longest Palindromic Substring
 ||005|使用3层迭代,| O(N^3)| 23%
 ||005_dp|使用动态规划,使用一个二维数组标记回文,减少一层循环|O(N^2) |48%
