@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 using std::string;
-using std::vector;
 
 static const auto io_sync_off = []() {
     std::ios::sync_with_stdio(false);
@@ -31,8 +29,8 @@ class Solution {
     }
 
    private:
-    bool isValid(const char c) { return c != '0'; }
-    bool isValid(const char c1, const char c2) {
+    bool isValid(char c) { return c != '0'; }
+    bool isValid(char c1, char c2) {
         return c1 == '1' || (c1 == '2' && c2 >= '0' && c2 <= '6');
     }
 };

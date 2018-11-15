@@ -33,6 +33,7 @@ leetcode code
 ||091_RecursionWithMemorization|递归+内存共享|时间 O(N^2),空间O(N^2)|31%
 ||091_dp|动态规划|时间:O(N) 空间O(1)|100%
 |105|Construct Binary Tree from Preorder and Inorder Traversal|递归方法 ||100%
+|139|Word Break|动态规划|时间O(N^2) 空间O(N)|100%
 |207|Course Schedule
 ||207_dfs|dfs 解法,二维 vector / map 采用邻接表存储图 |时间:O(Node+Edge) |99%
 ||207_bfs|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|时间:O(Node+Edge) | 99%
