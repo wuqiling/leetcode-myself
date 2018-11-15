@@ -1,7 +1,9 @@
 # leetcode
+
 leetcode code
 
 ## 使用 C/C++ 编程
+
 ---
 
 |#|文件名|  解法笔记 | 复杂度 | 百分比
@@ -25,8 +27,9 @@ leetcode code
 |011|Container With Most Water
 ||011|暴力解法|时间:O(N^2)| 40%
 ||011_twoPointer| 双指针解法| 时间:O(N) |100%
+|015|3Sum|双指针|time:O(N^2) space:O(N)|42%
 |019|Remove Nth Node From End of List| 双指针解法, 注意删除head 节点的情况|时间:O(N)|100%
-|055|Jump Game|贪婪算法,从尾部向前求局部最优||100%
+|055|Jump Game|贪婪算法,从尾部向前求局部最优|时间:O(N)|100%
 |062|Unique Paths|动态规范|时间:O(M*N) 空间:O(M *N)|100%
 |069|Sqrt(x)|使用二分查找|时间:O(NlgN)| 98%
 |091|Decode Ways
