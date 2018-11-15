@@ -29,6 +29,9 @@ leetcode code
 |055|Jump Game|贪婪算法,从尾部向前求局部最优||100%
 |062|Unique Paths|动态规范|时间:O(M*N) 空间:O(M *N)|100%
 |069|Sqrt(x)|使用二分查找|时间:O(NlgN)| 98%
+|091|Decode Ways
+||091_RecursionWithMemorization|递归+内存共享|时间 O(N^2),空间O(N^2)|31%
+||091_dp|动态规划|时间:O(N) 空间O(1)|100%
 |105|Construct Binary Tree from Preorder and Inorder Traversal|递归方法 ||100%
 |207|Course Schedule
 ||207_dfs|dfs 解法,二维 vector / map 采用邻接表存储图 |时间:O(Node+Edge) |99%
