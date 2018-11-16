@@ -41,35 +41,33 @@ class Solution {
 
         // base case
         dp[0][0] = true;
-        for (int i = 0; i < P; i++) {
+        for (int i = 0; i < P; i++)
             if (p[i] == '*' && dp[0][i - 1]) dp[0][i + 1] = true;
-        }
 
         //
         for (int i = 0; i < S; i++) {
             for (int j = 0; j < P; j++) {
-                if (p[j] == s[i]) dp[i + 1][j + 1] = dp[i][j];
-                else if (p[j] == '.') dp[i + 1][j + 1] = dp[i][j];
+                if (p[j] == s[i])
+                    dp[i + 1][j + 1] = dp[i][j];
+                else if (p[j] == '.')
+                    dp[i + 1][j + 1] = dp[i][j];
                 else if (p[j] == '*') {
                     if (p[j - 1] != s[i] && p[j - 1] != '.')
                         dp[i + 1][j + 1] = dp[i + 1][j - 1];
-                    else {
+                    else
                         dp[i + 1][j + 1] =
                             dp[i + 1][j] || dp[i][j + 1] || dp[i + 1][j - 1];
-                    }
-                }
-				else {
-					dp[i + 1][j + 1] = false;
-				}
+
+                } else
+                    dp[i + 1][j + 1] = false;
             }
         }
         return dp[S][P];
     }
 };
 
-
 int main() {
-	Solution s;
-	s.isMatch("", ".*");
-	return 0;
+    Solution s;
+    s.isMatch("", ".*");
+    return 0;
 }

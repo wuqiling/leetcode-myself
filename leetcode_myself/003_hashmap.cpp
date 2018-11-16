@@ -1,13 +1,12 @@
 #include <iostream>
 
 int lengthOfLongestSubstring(const char *s) {
-    if (s == NULL || *s == '\0') {
-        return 0;
-    }
+    if (s == NULL || *s == '\0') return 0;
+
     int len = strlen(s);
-    if (len == 1) {
+    if (len == 1)
         return 1;
-    } else if (len == 2) {
+    else if (len == 2) {
         if (s[0] == s[1])
             return 1;
         else
@@ -30,11 +29,9 @@ int lengthOfLongestSubstring(const char *s) {
                 break;
             }
         }
-        if (!breakFlag) {
-            if (secPos - firstPos > maxLen) {
-                maxLen = secPos - firstPos;
-            }
-        }
+        if (!breakFlag && secPos - firstPos > maxLen)
+            maxLen = secPos - firstPos;
+
         if (maxLen > len - firstPos || maxLen > 95) break;
         memset(hashArray, 0, sizeof(hashArray));
     }

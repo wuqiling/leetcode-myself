@@ -41,9 +41,9 @@ class Solution {
                 p = flagP ? p * nums[i] : 1;
                 n = flagN ? n * nums[i] : nums[i];
 
-				flagN = 1;
+                flagN = 1;
                 res = nums[i] > res ? nums[i] : res;
-				res = flagP&&p > res ? p : res;
+                res = flagP && p > res ? p : res;
             } else {
                 flagP = flagN = 0;
                 n = 1;
@@ -66,7 +66,7 @@ class Solution {
 
 int main() {
     Solution s;
-    vector<int> a = {-4,-3};
+    vector<int> a = {-4, -3};
     int ans = s.maxProduct(a);
     return 0;
 }

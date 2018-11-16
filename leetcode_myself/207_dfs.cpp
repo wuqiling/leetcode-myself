@@ -42,17 +42,16 @@ class Solution {
 
     bool canFinish_map(int numCourses, vector<pair<int, int>> &prerequisites) {
         multimap<int, int> graph;
-        for (const auto &p : prerequisites) {
+        for (const auto &p : prerequisites)
             graph.insert(std::make_pair(p.first, p.second));  // first -> second
-        }
 
         // status 0:unknow 1:visting 2:visited
         vector<int> courseStatus(numCourses, 0);
 
         // dfs
-        for (int i = 0; i < numCourses; i++) {
+        for (int i = 0; i < numCourses; i++)
             if (dfs_map(i, courseStatus, graph)) return false;
-        }
+
         return true;
     }
 

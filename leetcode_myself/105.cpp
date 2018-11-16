@@ -27,9 +27,8 @@ static struct TreeNode *buildTree(int *preorder, int preorderSize, int *inorder,
         /*建立根节点*/
         struct TreeNode *root =
             (struct TreeNode *)malloc(sizeof(struct TreeNode));
-        if (!root) {
-            return NULL;
-        }
+        if (!root) return NULL;
+
         root->val = *preorder;
 
         if (preorderSize == 1) {
@@ -40,9 +39,7 @@ static struct TreeNode *buildTree(int *preorder, int preorderSize, int *inorder,
         /*计算左子数节点个数*/
         int i = 0;
         for (i = 0; i < preorderSize - 1; i++) {
-            if (inorder[i] == preorder[0]) {
-                break;
-            }
+            if (inorder[i] == preorder[0]) break;
         }
 
         root->left = buildTree(preorder + 1, i, inorder, i);

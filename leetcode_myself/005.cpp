@@ -9,9 +9,8 @@
 char *longestPalindrome(char *s) {
     char *strResult = NULL;
     int sLen = strlen(s);
-    if (sLen == 0 || sLen == 1) {
-        return s;
-    }
+    if (sLen == 0 || sLen == 1) return s;
+
     //从最长的字符串开始找起
     //一个查找左边，一个查找右边
     char *p = s, *q = s;
@@ -33,9 +32,8 @@ char *longestPalindrome(char *s) {
 
             if (equFlag) {
                 strResult = (char *)malloc((tmpLen + 1) * sizeof(char));
-                if (strResult == NULL) {
-                    return NULL;
-                }
+                if (strResult == NULL) return NULL;
+
                 memset(strResult, 0, tmpLen + 1);
                 strncpy(strResult, p, tmpLen);
                 return strResult;
@@ -43,9 +41,8 @@ char *longestPalindrome(char *s) {
         }
     }
     strResult = (char *)malloc(2 * sizeof(char));
-    if (strResult == NULL) {
-        return NULL;
-    }
+    if (strResult == NULL) return NULL;
+
     strncpy(strResult, s, 1);
     return strResult;
 }
