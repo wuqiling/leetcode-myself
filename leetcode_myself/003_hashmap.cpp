@@ -19,12 +19,10 @@ int lengthOfLongestSubstring(const char *s) {
         int breakFlag = 0;
         int secPos = firstPos + 1;
         for (; secPos < len; secPos++) {
-            if (hashArray[s[secPos]] == 0) {
+            if (hashArray[s[secPos]] == 0)
                 hashArray[s[secPos]] = 1;
-            } else {
-                if (secPos - firstPos > maxLen) {
-                    maxLen = secPos - firstPos;
-                }
+            else {
+                if (secPos - firstPos > maxLen) maxLen = secPos - firstPos;
                 breakFlag = 1;
                 break;
             }

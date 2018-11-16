@@ -9,9 +9,8 @@ int myAtoi(char *str) {
     if (str == NULL) return 0;
     int64_t result = 0;
     int isNeg = 0;
-    /************************************************************************/
-    /* move str                                                              */
-    /************************************************************************/
+
+    /* move str*/
     while (*str != '\0') {
         if (*str == ' ')
             str++;
@@ -31,7 +30,6 @@ int myAtoi(char *str) {
         if (*str >= '0' && *str <= '9') {
             result = result * 10 + *str - '0';
             if (result > INT_MAX) return isNeg ? INT_MIN : INT_MAX;
-
         } else {
             break;
         }

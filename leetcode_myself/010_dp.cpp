@@ -36,7 +36,7 @@ class Solution {
    public:
     bool isMatch(string s, string p) {
         const int S = s.size(), P = p.size();
-        //以长度为基准
+        //base on len
         vector<vector<bool>> dp(S + 1, vector<bool>(P + 1, false));
 
         // base case
