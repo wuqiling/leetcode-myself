@@ -24,13 +24,12 @@ class Solution {
 
         // binary search
         while (begin < end) {
-            if (index[begin].first + index[end].first == target) {
+            if (index[begin].first + index[end].first == target)
                 return {index[begin].second, index[end].second};
-            } else if (index[begin].first + index[end].first < target) {
+            else if (index[begin].first + index[end].first < target)
                 begin++;
-            } else {
+            else
                 end--;
-            }
         }
         return {};
     }

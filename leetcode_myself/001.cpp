@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*最简单的方法，使用两次迭代*/
+/*time:O(N^2) space:O(1)*/
 
-//////////////////////////////////////////////////////////////////////////
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
