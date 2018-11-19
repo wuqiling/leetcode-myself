@@ -25,11 +25,9 @@ class Solution {
         dp[0] = 1;  // null str is true
         for (int i = 1; i <= N; i++) {
             for (int j = 0; j < i; j++) {
-                if (dp[j]) {
-                    if (dicHash.count(s.substr(j + 1, i - j))) {
-                        dp[i] = 1;
-                        break;
-                    }
+                if (dp[j] && dicHash.count(s.substr(j + 1, i - j))) {
+                    dp[i] = 1;
+                    break;
                 }
             }
         }

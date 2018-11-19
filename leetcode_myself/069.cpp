@@ -7,11 +7,11 @@ int mySqrt(int x) {
         return 0;
     else if (x == 1)
         return 1;
-    long long i = 0;
-    long long j = x / 2 + 1;
+    int i = 0;
+    int j = x / 2 + 1;
     while (i < j) {
-        long long mid = (i + j) / 2;
-        long long sq = mid * mid;
+        int mid = (i + j) / 2;
+        int sq = mid * mid;
         if (sq < x)
             i = mid;
         else if (sq > x)

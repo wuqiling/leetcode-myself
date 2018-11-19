@@ -4,14 +4,6 @@ int lengthOfLongestSubstring(const char *s) {
     if (s == NULL || *s == '\0') return 0;
 
     int len = strlen(s);
-    if (len == 1)
-        return 1;
-    else if (len == 2) {
-        if (s[0] == s[1])
-            return 1;
-        else
-            return 2;
-    }
     int maxLen = 0;
     int hashArray[256] = {0};
     for (int firstPos = 0; firstPos < len; firstPos++) {
@@ -30,7 +22,7 @@ int lengthOfLongestSubstring(const char *s) {
         if (!breakFlag && secPos - firstPos > maxLen)
             maxLen = secPos - firstPos;
 
-        if (maxLen > len - firstPos || maxLen > 95) break;
+        if (maxLen >= len - firstPos) break;
         memset(hashArray, 0, sizeof(hashArray));
     }
     return maxLen;

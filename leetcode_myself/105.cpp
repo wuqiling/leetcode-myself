@@ -38,9 +38,8 @@ static struct TreeNode *buildTree(int *preorder, int preorderSize, int *inorder,
         }
         /*计算左子数节点个数*/
         int i = 0;
-        for (i = 0; i < preorderSize - 1; i++) {
+        for (i = 0; i < preorderSize - 1; i++)
             if (inorder[i] == preorder[0]) break;
-        }
 
         root->left = buildTree(preorder + 1, i, inorder, i);
         root->right = buildTree(preorder + 1 + i, preorderSize - i - 1,
