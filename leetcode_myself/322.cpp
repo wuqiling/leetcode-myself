@@ -50,7 +50,7 @@ class Solution {
     }
 
     // time:O(size_array*amount) space:O(amount)
-	// time:8ms 98%
+    // time:8ms 98%
     // don't use map
     int coinChange_dp_method1_1(vector<int>& coins, int amount) {
         vector<int> dp(amount + 1, amount + 1);
@@ -73,31 +73,26 @@ class Solution {
         return dp[amount] >= amount + 1 ? -1 : dp[amount];
     }
 
-
-	//dfs + greedy + pruning
-	//time:4ms 99%
+    // dfs + greedy + pruning
+    // time:4ms 99%
     int coinChange_dfs_greedy_method2(vector<int>& coins, int amount) {
-		//sort in desending order
-		sort(coins.rbegin(), coins.rend());
-		int ans = INT_MAX;
-		_dfs_greedy(coins, 0, amount, 0, ans);
-		return ans == INT_MAX ? -1 : ans;
-	}
+        // sort in desending order
+        sort(coins.rbegin(), coins.rend());
+        int ans = INT_MAX;
+        _dfs(coins, 0, amount, 0, ans);
+        return ans == INT_MAX ? -1 : ans;
+    }
 
-	void _dfs_greedy(vector<int>& coins, int coin_idx,int amount,int count,int &ans) {
-		const int coin = coins[coin_idx];//current coin
-		if (coin_idx == coins.size() - 1) {
-			if (amount%coin == 0)
-				ans = min(ans, count + amount / coin);
-		}
-		else {
-			for (int i = amount / coin/*greedy*/; i >= 0 && count + i < ans/*pruning !!!*/; i--) {
-				/*dfs*/
-				_dfs_greedy(coins, coin_idx + 1, amount - i*coin, count + i, ans);
-			}
-		}
-
-	}
+    void _dfs(vector<int>& coins, int coin_idx, int amount, int count,
+              int& ans) {
+        const int coin = coins[coin_idx];  // current coin
+        if (coin_idx == coins.size() - 1) {
+            if (amount % coin == 0) ans = min(ans, count + amount / coin);
+        } else {
+            for (int i = amount / coin; i >= 0 && count + i < ans; i--)
+                _dfs(coins, coin_idx + 1, amount - i * coin, count + i, ans);
+        }
+    }
 
    private:
     int min(long long a, long long b) { return a > b ? b : a; }
