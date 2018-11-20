@@ -43,6 +43,7 @@ leetcode code
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|时间:O(Node+Edge) | 99%
 |279|[Perfect Squares](./leetcode_myself/279.cpp)| 动态规划|time: O(N^2) space:O(N)|73%
 |300|[Longest Increasing Subsequence](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
+|322|[Coin Change](./leetcode_myself/322.cpp)|dp dfs greedy|time:O(size_array*amount) space:O(amount)|4ms 99%
 |380|[Insert Delete GetRandom O(1)](./leetcode_myself/380.cpp)|使用哈希表和数组 ||99%
 |593|[Valid Square](./leetcode_myself/593.cpp)|较直接的判断方式,第一时间不一定能想到|| 100%
 

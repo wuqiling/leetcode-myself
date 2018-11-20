@@ -1,5 +1,5 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 using std::vector;
@@ -14,11 +14,11 @@ class Solution {
         const int N = nums.size();
         if (N == 0) return 0;
 
-        vector<int> dp(N, 1);  //dp[i]: lis end with i
+        vector<int> dp(N, 1);  // dp[i]: lis end with i
         int res = 1;
         for (int i = 1; i < N; i++) {
             for (int j = i - 1; j >= 0; j--)
-                if (nums[j] < nums[i] && dp[j] + 1 > dp[i]) dp[i] = dp[j] + 1;
+                if (nums[j] < nums[i]) dp[i] = max(dp[j] + 1, dp[i]);
             res = max(res, dp[i]);
         }
 
