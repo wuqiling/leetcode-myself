@@ -42,7 +42,9 @@ leetcode code
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
 |279|[Perfect Squares](./leetcode_myself/279.cpp)| 动态规划|time: O(N^2) space:O(N)|73%
-|300|[Longest Increasing Subsequence](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
+|300|Longest Increasing Subsequence
+||[300](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
+||[300](./leetcode_myself/300.cpp)|dp+binary search|time:O(NlogN) space:O(N) |~0ms 100%
 |322|[Coin Change](./leetcode_myself/322.cpp)|方法一:dp 方法二:dfs greedy|time:O(size_array*amount) space:O(amount)|4ms 99%
 |380|[Insert Delete GetRandom O(1)](./leetcode_myself/380.cpp)|使用哈希映射和数组 ||99%
 |593|[Valid Square](./leetcode_myself/593.cpp)|较直接的判断方式|| 100%
