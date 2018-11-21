@@ -6,7 +6,7 @@ leetcode code
 
 ---
 
-|#|文件名|  解法笔记 | 复杂度 | 时间/百分比
+|#|文件名|  解法笔记 | 复杂度 | 耗时/百分比
 --|-----|-------|--------|--
 |001|Two Sum
 ||[001](./leetcode_myself/001.cpp)|暴力搜索,使用两次迭代|O(N^2)|10%
@@ -34,10 +34,10 @@ leetcode code
 |062|[Unique Paths](./leetcode_myself/062_dp.cpp)|动态规范|time:O(M*N) space:O(M *N)|100%
 |069|[Sqrt(x)](./leetcode_myself/069.cpp)|使用二分查找|time:O(NlgN)| 98%
 |091|Decode Ways
-||[091_RecursionWithMemorization](./leetcode_myself/091_RecursionWithMemorization.cpp)|递归+内存共享|time O(N^2),空间O(N^2)|31%
-||[091_dp](./leetcode_myself/091_dp.cpp)|动态规划|time:O(N) 空间O(1)|100%
+||[091_RecursionWithMemorization](./leetcode_myself/091_RecursionWithMemorization.cpp)|递归+内存共享|time O(N^2),space:O(N^2)|31%
+||[091_dp](./leetcode_myself/091_dp.cpp)|动态规划|time:O(N) space:O(1)|100%
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./leetcode_myself/105.cpp)|递归方法 ||100%
-|139|[Word Break](./leetcode_myself/139.cpp)|动态规划|时间O(N^2) 空间O(N)|100%
+|139|[Word Break](./leetcode_myself/139.cpp)|动态规划|time:O(N^2) space:O(N)|100%
 |152|[Maximum Product Subarray](./leetcode_myself/152.cpp)|动态规划 |time:O(N) space:O(1)|100%
 |207|Course Schedule
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
