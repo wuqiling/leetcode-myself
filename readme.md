@@ -46,6 +46,10 @@ leetcode code
 ||[300](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
 ||[300](./leetcode_myself/300.cpp)|dp+binary search|time:O(NlogN) space:O(N) |~0ms 100%
 |322|[Coin Change](./leetcode_myself/322.cpp)|方法一:dp 方法二:dfs greedy|time:O(size_array*amount) space:O(amount)|4ms 99%
+|349|[Intersection of Two Arrays](./leetcode_myself/349.cpp)| 使用std::set|time:O(M+N) space:O(M+N)|4ms 100%
+|350|Intersection of Two Arrays II
+||[350](./leetcode_myself/350.cpp)|使用排序+双子针 | time: O(max(NlgN,MlgM)) space:O(max(N,M))|8ms 36%
+||[350](./leetcode_myself/350.cpp)|使用 map | time:O(N+M) space:O(max(N,M))|4ms 100%
 |380|[Insert Delete GetRandom O(1)](./leetcode_myself/380.cpp)|使用哈希映射和数组 ||99%
 |593|[Valid Square](./leetcode_myself/593.cpp)|较直接的判断方式|| 100%
 
