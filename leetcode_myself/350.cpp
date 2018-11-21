@@ -13,7 +13,7 @@ class Solution {
     }
 
    private:
-    // time: O(max(N,M)log(max(N,M))) space:O(max(N,M))
+    // time: O(max(NlgN,MlgM)) space:O(max(N,M))
     vector<int> intersect_method1(vector<int>& nums1, vector<int>& nums2) {
         const int N = nums1.size(), M = nums2.size();
         sort(nums1.begin(), nums1.end());
