@@ -29,6 +29,7 @@ leetcode code
 ||[011_twoPointer](./leetcode_myself/011_twoPointer.cpp)| 双指针解法| time:O(N) |100%
 |015|[3Sum](./leetcode_myself/015.cpp)|双指针|time:O(N^2) space:O(N)|91%
 |019|[Remove Nth Node From End of List](./leetcode_myself/019.cpp)| 双指针解法, 注意删除head 节点的情况|time:O(N)|100%
+|029|[Divide Two Integers](./leetcode_myself/029.cpp)|注意累加方式, 防止溢出| time:O(log(N)) space:O(1)|12ms 98%
 |055|[Jump Game](./leetcode_myself/055.cpp)|贪婪算法,从尾部向前求局部最优|time:O(N)|100%
 |062|[Unique Paths](./leetcode_myself/062_dp.cpp)|动态规范|time:O(M*N) space:O(M *N)|100%
 |069|[Sqrt(x)](./leetcode_myself/069.cpp)|使用二分查找|time:O(NlgN)| 98%
