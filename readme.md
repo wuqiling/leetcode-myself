@@ -6,7 +6,7 @@ leetcode code
 
 ---
 
-|#|文件名|  解法笔记 | 复杂度 | 耗时/百分比
+|#|Title|  Notes | Complexity | Run time
 --|-----|-------|--------|--
 |001|Two Sum
 ||[001](./leetcode_myself/001.cpp)|暴力搜索,使用两次迭代|O(N^2)|10%
@@ -30,6 +30,8 @@ leetcode code
 |015|[3Sum](./leetcode_myself/015.cpp)|双指针|time:O(N^2) space:O(N)|91%
 |019|[Remove Nth Node From End of List](./leetcode_myself/019.cpp)| 双指针解法, 注意删除head 节点的情况|time:O(N)|100%
 |029|[Divide Two Integers](./leetcode_myself/029.cpp)|注意累加方式, 防止溢出| time:O(log(N)) space:O(1)|12ms 98%
+|033|[Search in Rotated Sorted Array](./leetcode_myself/033.cpp)|注意边界条件|time:O(log(N)) space:O(1)|4ms 98%
+|034|[Find First and Last Position of Element in Sorted Array](./leetcode_myself/034.cpp)|二分法一种变形使用|time:O(log(N)) space:O(1)|8ms 63%
 |055|[Jump Game](./leetcode_myself/055.cpp)|贪婪算法,从尾部向前求局部最优|time:O(N)|100%
 |062|[Unique Paths](./leetcode_myself/062_dp.cpp)|动态规范|time:O(M*N) space:O(M *N)|100%
 |069|[Sqrt(x)](./leetcode_myself/069.cpp)|使用二分查找|time:O(NlgN)| 98%
@@ -39,6 +41,7 @@ leetcode code
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./leetcode_myself/105.cpp)|递归方法 ||100%
 |139|[Word Break](./leetcode_myself/139.cpp)|动态规划|time:O(N^2) space:O(N)|100%
 |152|[Maximum Product Subarray](./leetcode_myself/152.cpp)|动态规划 |time:O(N) space:O(1)|100%
+|162|[Find Peak Element](./leetcode_myself/162.cpp)|二分查找|time:O(logN) space:O(1)|4ms 99%
 |207|Course Schedule
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
