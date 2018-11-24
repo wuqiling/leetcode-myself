@@ -6,6 +6,7 @@ using std::vector;
 
 class Solution {
    public:
+   //time:O(M+N) space:O(M+N)|4ms 100%
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         unordered_set<int> hashs1;
         for (const auto& p : nums1) hashs1.insert(p);
