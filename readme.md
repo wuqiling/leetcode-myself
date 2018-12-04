@@ -45,6 +45,7 @@ leetcode code
 |207|Course Schedule
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
+|230|[Kth Smallest Element in a BST](./leetcode_myself/230.cpp)|中序遍历+stack|time:O(N) space:O(N)| 16ms 33%
 |279|[Perfect Squares](./leetcode_myself/279.cpp)| 动态规划|time: O(N^2) space:O(N)|73%
 |300|Longest Increasing Subsequence
 ||[300](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
