@@ -63,7 +63,9 @@ leetcode code
 |350|Intersection of Two Arrays II
 ||[350](./leetcode_myself/350.cpp)|使用排序+双子针 | time: O(max(NlgN,MlgM)) space:O(max(N,M))|8ms 36%
 ||[350](./leetcode_myself/350.cpp)|使用 map | time:O(N+M) space:O(max(N,M))|4ms 100%
+|378|[Kth Smallest Element in a Sorted Matrix](./leetcode_myself/378.cpp)|binary search|time O(lg(max-min)*N*lgN) space O(1)| 32ms 57%
 |380|[Insert Delete GetRandom O(1)](./leetcode_myself/380.cpp)|使用哈希映射和数组 ||99%
+|454|[4Sum II](./leetcode_myself/454.cpp)|hashmap|time O(N^2) space O(N^2)|100 ms 94.50%
 |593|[Valid Square](./leetcode_myself/593.cpp)|较直接的判断方式|| 100%
 
 
