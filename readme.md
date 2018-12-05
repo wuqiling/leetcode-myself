@@ -47,6 +47,10 @@ leetcode code
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
 |230|[Kth Smallest Element in a BST](./leetcode_myself/230.cpp)|中序遍历+stack|time:O(N) space:O(N)| 16ms 33%
 |279|[Perfect Squares](./leetcode_myself/279.cpp)| 动态规划|time: O(N^2) space:O(N)|73%
+|287|Find the Duplicate Number
+||[287](./leetcode_myself/287.cpp)|brute force|time O(N^2) sapce O(1)| 452ms  3.2%
+||[287](./leetcode_myself/287.cpp)|binary search|time O(NlgN) space O(1)| 12ms 35%
+||[287](./leetcode_myself/287.cpp)|Floyd alg|time O(N) space O(1)| 4ms 100%
 |300|Longest Increasing Subsequence
 ||[300](./leetcode_myself/300.cpp)|动态规划|time:O(N^2) space:O(N) |16ms 55%
 ||[300](./leetcode_myself/300.cpp)|dp+binary search|time:O(NlogN) space:O(N) |~0ms 100%
