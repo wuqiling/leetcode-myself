@@ -45,7 +45,11 @@ leetcode code
 |207|Course Schedule
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
-|230|[Kth Smallest Element in a BST](./leetcode_myself/230.cpp)|中序遍历+stack|time:O(N) space:O(N)| 16ms 33%
+|230|[Kth Smallest Element in a BST](./leetcode_myself/230.cpp)|中序遍历+stack|time:O(N) space:O(N)| 8ms 99%
+|240|Search a 2D Matrix II
+||[240](./leetcode_myself/240.cpp)|brute force|time:O(N*M) space:O(1)| 964ms 1.4%
+||[240](./leetcode_myself/240.cpp)|divide and conquer+ recursion|time:O(n^1.58)| 1284ms 0.3%
+||[240](./leetcode_myself/240.cpp)| Smart alg|time O(M+N) space O(1)| 36ms 98%
 |279|[Perfect Squares](./leetcode_myself/279.cpp)| 动态规划|time: O(N^2) space:O(N)|73%
 |287|Find the Duplicate Number
 ||[287](./leetcode_myself/287.cpp)|brute force|time O(N^2) sapce O(1)| 452ms  3.2%

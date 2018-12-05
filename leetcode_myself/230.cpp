@@ -18,12 +18,15 @@ class Solution {
 
    private:
     // dfs
-    //In-order traversal(Preorder traversal Post-order traversal)
+    // In-order traversal(Preorder traversal Post-order traversal)
     void dfs(TreeNode *root) {
         if (root == NULL) return;
         dfs(root->left);
         globalK--;
-        if (globalK == 0) res = root->val;
+        if (globalK == 0) {
+            res = root->val;
+            return;
+        }
         dfs(root->right);
     }
 
