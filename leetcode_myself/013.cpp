@@ -10,7 +10,7 @@ class Solution {
 
    private:
     // time O(N) space O(1)
-    // runtime 52ms 78%
+    // runtime 20ms 100%
     int romanToInt_1(string s) {
         int N = s.size();
         if (N == 0) return 0;
@@ -43,7 +43,7 @@ class Solution {
 
     // hash map
     // O(N)~O(N*M)=>hashmap: avg O(1) ~ worst O(M)
-    // runtime 104 9%
+    // runtime 40ms 96%
     int romanToInt_2(string s) {
         int N = s.size();
         if (N == 0) return 0;
