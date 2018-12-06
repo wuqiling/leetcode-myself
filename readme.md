@@ -30,6 +30,7 @@ leetcode code
 |013|[Roman to Integer](./leetcode_myself/013.cpp)|注意题目意思|time O(N) space O(1)|20ms 100%
 |014|[Longest Common Prefix](./leetcode_myself/014.cpp)|基础 string|time O(N*M) space O(1)| ~0 100%
 |015|[3Sum](./leetcode_myself/015.cpp)|双指针|time:O(N^2) space:O(N)|91%
+|017|[Letter Combinations of a Phone Number](./leetcode_myself/017.cpp)| dfs ||~0 100%
 |019|[Remove Nth Node From End of List](./leetcode_myself/019.cpp)| 双指针解法, 注意删除head 节点的情况|time:O(N)|100%
 |020|[Valid Parentheses](./leetcode_myself/020.cpp)| stack |time O(N) space O(N)|~0 100%
 |022|[Generate Parentheses](./leetcode_myself/022.cpp)| dfs ||~0 100%
@@ -42,6 +43,7 @@ leetcode code
 |033|[Search in Rotated Sorted Array](./leetcode_myself/033.cpp)|注意边界条件|time:O(log(N)) space:O(1)|4ms 98%
 |034|[Find First and Last Position of Element in Sorted Array](./leetcode_myself/034.cpp)|二分法一种变形使用|time:O(log(N)) space:O(1)|8ms 63%
 |038|[Count and Say](./leetcode_myself/038.cpp)| string |time O(N) space O(N)|~0 100%
+|049|[Group Anagrams](./leetcode_myself/049.cpp)| string hashtable stl|time N*M*lgM space N*M|16ms 99%
 |055|[Jump Game](./leetcode_myself/055.cpp)|贪婪算法,从尾部向前求局部最优|time:O(N)|100%
 |062|[Unique Paths](./leetcode_myself/062_dp.cpp)|动态规范|time:O(M*N) space:O(M *N)|100%
 |069|[Sqrt(x)](./leetcode_myself/069.cpp)|使用二分查找|time:O(NlgN)| 98%
