@@ -12,12 +12,9 @@ class Solution {
     // runtime 100 ms 94.50%
     int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C,
                      vector<int>& D) {
-        int N = A.size();
-        if (N == 0) return 0;
-
         unordered_map<int, int> abSum;
         for (const auto& a : A)
-            for (const auto& b : B) abSum[a + b]++;
+            for (const auto& b : B) ++abSum[a + b];//++i faster then i++
 
         int res = 0;
         for (const auto& c : C)
