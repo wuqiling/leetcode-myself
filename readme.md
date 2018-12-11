@@ -33,6 +33,7 @@ leetcode code
 |017|[Letter Combinations of a Phone Number](./leetcode_myself/017.cpp)| dfs ||~0 100%
 |019|[Remove Nth Node From End of List](./leetcode_myself/019.cpp)| 双指针解法, 注意删除head 节点的情况|time:O(N)|100%
 |020|[Valid Parentheses](./leetcode_myself/020.cpp)| stack |time O(N) space O(N)|~0 100%
+|021|[Merge Two Sorted Lists](./leetcode_myself/021.cpp)| list |time O(N) space O(N)|4ms 100%
 |022|[Generate Parentheses](./leetcode_myself/022.cpp)| dfs ||~0 100%
 |028|Implement strStr()
 ||[028](./leetcode_myself/028.cpp)| brute force |time O(N*M) space O(1)|4ms 98%
@@ -43,10 +44,12 @@ leetcode code
 |033|[Search in Rotated Sorted Array](./leetcode_myself/033.cpp)|注意边界条件|time:O(log(N)) space:O(1)|4ms 98%
 |034|[Find First and Last Position of Element in Sorted Array](./leetcode_myself/034.cpp)|二分法一种变形使用|time:O(log(N)) space:O(1)|8ms 63%
 |038|[Count and Say](./leetcode_myself/038.cpp)| string |time O(N) space O(N)|~0 100%
+|044|[Wildcard Matching](./leetcode_myself/044.cpp)| dp |time O(M*N) space O(M *N)|16ms 99%
 |049|[Group Anagrams](./leetcode_myself/049.cpp)| string hashtable stl|time N*M*lgM space N*M|16ms 99%
 |055|[Jump Game](./leetcode_myself/055.cpp)|贪婪算法,从尾部向前求局部最优|time:O(N)|100%
 |062|[Unique Paths](./leetcode_myself/062_dp.cpp)|动态规范|time:O(M*N) space:O(M *N)|100%
 |069|[Sqrt(x)](./leetcode_myself/069.cpp)|使用二分查找|time:O(NlgN)| 98%
+|076|[Minimum Window Substring](./leetcode_myself/076.cpp)|two pointer + greedy|time O(N) space O(1)| runtime 4ms 99%
 |091|Decode Ways
 ||[091_RecursionWithMemorization](./leetcode_myself/091_RecursionWithMemorization.cpp)|递归+内存共享|time O(N^2),space:O(N^2)|31%
 ||[091_dp](./leetcode_myself/091_dp.cpp)|动态规划|time:O(N) space:O(1)|100%
@@ -55,6 +58,7 @@ leetcode code
 |139|[Word Break](./leetcode_myself/139.cpp)|动态规划|time:O(N^2) space:O(N)|100%
 |152|[Maximum Product Subarray](./leetcode_myself/152.cpp)|动态规划 |time:O(N) space:O(1)|100%
 |162|[Find Peak Element](./leetcode_myself/162.cpp)|二分查找|time:O(logN) space:O(1)|4ms 99%
+|206|[Reverse Linked List](./leetcode_myself/206.cpp)|list|time:O(N) space:O(1)|8ms 33%
 |207|Course Schedule
 ||[207_dfs](./leetcode_myself/207_dfs.cpp)|dfs 解法,二维 vector / map 采用邻接表存储图 |time:O(Node+Edge) |99%
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
