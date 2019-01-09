@@ -25,7 +25,8 @@ class Solution {
         return true;
     }
 
-    // time O(N lg lg N) space  O(n)
+    // time O(N log log N) space  O(n)
+    //Runtime: 32 ms, faster than 56.31%
     int countPrimes_2(int n) {
         vector<int> table(n, 0);
         for (int i = 2; i < n; i++) table[i] = 1;

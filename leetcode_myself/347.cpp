@@ -14,7 +14,7 @@ class Solution {
 
    private:
     // hash map + sort
-    // time O(N logN) space O(N)
+    // time O(NlogN) space O(N)
     // Runtime: 12 ms, faster than 99.44%
     vector<int> topKFrequent_1(vector<int>& nums, int k) {
         unordered_map<int, int> hm;

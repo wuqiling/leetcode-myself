@@ -10,7 +10,7 @@ struct TreeNode {
 class Solution {
    public:
     // dfs
-    // time O(N) space O(1)
+    // time O(N) space O(height)
     // Runtime: 12 ms, faster than 58.71%
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (root == p || root == q || root == NULL) return root;

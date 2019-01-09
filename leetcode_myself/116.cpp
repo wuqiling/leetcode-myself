@@ -15,7 +15,7 @@ class Solution {
 
    private:
     // queue
-    // time O(N) space O(max one layer size)
+    // time O(N) space O(height)
     // Runtime: 16 ms, faster than 47.04%
     void connect_1(TreeLinkNode *root) {
         if (!root) return;
@@ -41,7 +41,7 @@ class Solution {
 
    private:
     // iteration
-    // time O(N) space O(1)
+    // time O(N) space O(height)
     // Runtime: 16 ms, faster than 47.04%
     void connect_2(TreeLinkNode *root) {
         if (!root) return;

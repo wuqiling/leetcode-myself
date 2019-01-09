@@ -9,7 +9,7 @@ using std::pair;
 using std::priority_queue;
 using std::vector;
 
-// Bst£¨multiset£©
+// bst
 // Time O(NlogN) sapce O(N)
 // Runtime: 16 ms, faster than 92.38%
 class Solution {

@@ -6,8 +6,7 @@ using std::vector;
 
 class Solution {
    public:
-    // ???
-    // time O(N) space O(1£©
+    // time O(N) space O(1)
     // Runtime: 124 ms, faster than 11.24%
     void wiggleSort(vector<int>& nums) {
         int n = nums.size();

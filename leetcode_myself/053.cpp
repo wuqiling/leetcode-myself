@@ -10,7 +10,7 @@ class Solution {
     int maxSubArray(vector<int>& nums) { return maxSubArray_2(nums); }
 
    private:
-    // time space O(N) space O(1)
+    // time O(N) space O(1)
     // runtime 4ms 100%
     int maxSubArray_1(vector<int>& nums) {
 		if (nums.size() == 0) return 0;
