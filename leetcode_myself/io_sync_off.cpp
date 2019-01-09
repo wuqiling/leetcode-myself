@@ -1,5 +1,7 @@
-static const auto io_sync_off = []() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    return nullptr;
+static auto x = []() {
+    // turn off sync
+    ios::sync_with_stdio(false);
+    // untie in/out streams
+    cin.tie(NULL);
+    return 0;
 }();

@@ -32,6 +32,7 @@ static const auto io_sync_off = []() {
 
 TIME :O(M*N)   SPACE:O(M*N)
  */
+//dp
 class Solution {
    public:
     bool isMatch(string s, string p) {

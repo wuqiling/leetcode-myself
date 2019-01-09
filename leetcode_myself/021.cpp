@@ -35,6 +35,21 @@ class Solution {
         }
         return res.next;
     }
+
+    private:
+    // time O(N) space O(1)
+    ListNode *mergeTwoLists_2(ListNode *l1, ListNode *l2) {
+        ListNode dummy(0);
+        ListNode *cur = &dummy;
+        while (l1 && l2) {
+            if (l1->val > l2->val) swap(l1, l2);
+            cur->next = l1;
+            cur = cur->next;
+            l1 = l1->next;
+        }
+        cur->next = l1 ? l1 : l2;
+        return dummy.next;
+    }
 };
 
 int main() {

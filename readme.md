@@ -23,7 +23,7 @@ leetcode code
 ||[005_dp](./leetcode_myself/005_dp.cpp)|使用动态规划,使用一个二维数组标记回文,减少一层循环|O(N^2) |48%
 |007|[Reverse Integer](./leetcode_myself/007.cpp)|考察整数最值表示与转换| |98%
 |008|[String to Integer (atoi)](./leetcode_myself/008.cpp) |主要考察字符串处理|| 100%
-|010|[Regular Expression Matching](./leetcode_myself/010_dp.cpp)|动态规划|time:O(M*N) space:O(M *N)|72%
+|010|[Regular Expression Matching](./leetcode_myself/010.cpp)|动态规划|time:O(M*N) space:O(M *N)|72%
 |011|Container With Most Water
 ||[011](./leetcode_myself/011.cpp)|暴力解法|time:O(N^2)| 40%
 ||[011_twoPointer](./leetcode_myself/011_twoPointer.cpp)| 双指针解法| time:O(N) |100%
@@ -56,7 +56,10 @@ leetcode code
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](./leetcode_myself/105.cpp)|递归方法 ||100%
 |125|[Valid Palindrome](./leetcode_myself/125.cpp)|string stl |time O(N) space O(N)|8ms 61%
 |139|[Word Break](./leetcode_myself/139.cpp)|动态规划|time:O(N^2) space:O(N)|100%
+|141|[Linked List Cycle](./leetcode_myself/141.cpp)|two pointer|time O(N) space O(1)|4ms 100%
+|148|[Sort List](./leetcode_myself/148.cpp)|merge sort list|time O(NlgN) space O(1)|28ms 100%
 |152|[Maximum Product Subarray](./leetcode_myself/152.cpp)|动态规划 |time:O(N) space:O(1)|100%
+|160|[Intersection of Two Linked Lists](./leetcode_myself/160.cpp)|two pointer |time:O(N) space:O(1)|24ms 87%
 |162|[Find Peak Element](./leetcode_myself/162.cpp)|二分查找|time:O(logN) space:O(1)|4ms 99%
 |206|[Reverse Linked List](./leetcode_myself/206.cpp)|list|time:O(N) space:O(1)|8ms 33%
 |207|Course Schedule
@@ -64,6 +67,8 @@ leetcode code
 ||[207_bfs](./leetcode_myself/207_bfs.cpp)|bfs,使用 queue + vector 数据结构, 采用邻接表存储图|time:O(Node+Edge) | 99%
 |230|[Kth Smallest Element in a BST](./leetcode_myself/230.cpp)|中序遍历+stack|time:O(N) space:O(N)| 8ms 99%
 |227|[Basic Calculator II](./leetcode_myself/227.cpp)| stack |time O(N) space O(N)|4ms 100%
+|234|[Palindrome Linked List](./leetcode_myself/234.cpp)| two pointer |time O(N) |8ms 99%
+|237|[Delete](./leetcode_myself/237.cpp)| list |time O(1) |8ms %36
 |240|Search a 2D Matrix II
 ||[240](./leetcode_myself/240.cpp)|brute force|time:O(N*M) space:O(1)| 964ms 1.4%
 ||[240](./leetcode_myself/240.cpp)|divide and conquer+ recursion|time:O(n^1.58)| 1284ms 0.3%
