@@ -1,8 +1,26 @@
-# leetcode
+# leetcode #
 
-leetcode code
+ny leetcode notebook
 
-## 使用 C/C++ 编程
+
+## time space ##
+
+### c/c++ ### 
+Time limite 1s - 2s
+---
+|data scale (n=* )|time complesity( O(*) )|example
+--|--|--
+<=30 |2^n| expensial,dfs+cut
+10^2|n^3|floyed
+10^3|n^2, n^2*logn|dijkstra
+10^4|n*sqrt(n)
+10^5|n*logn|sort,线段树,树状数组,set/map,dijkstra+heap,spfa,求图包,半平面交,二分
+10^6|n,n*logn|hash,two pointer,kmp
+10^7|n|two pointer,kmp,ac自动机,线性筛数组,常数小的n*logn算法
+10^9|sqrt(n)
+10^18|logn|最大公约数,...,数论
+
+## Code use C/C++ ##
 
 ---
 
@@ -34,7 +52,7 @@ leetcode code
 |013|[Roman to Integer](./leetcode_myself/013.cpp)|string|time O(N) space O(1)|20ms 100%
 |014|[Longest Common Prefix](./leetcode_myself/014.cpp)|string|time O(N*M) space O(1)| ~0 100%
 |015|[3Sum](./leetcode_myself/015.cpp)|two pointer|time:O(N^2) space:O(N)|91%
-|017|[Letter Combinations of a Phone Number](./leetcode_myself/017.cpp)| dfs ||~0 100%
+|017|[Letter Combinations of a Phone Number](./leetcode_myself/017.cpp)| dfs |time O(3^n)~O(4^n),space O(n)|~0 100%
 |019|[Remove Nth Node From End of List](./leetcode_myself/019.cpp)| two pointer|time:O(N)|100%
 |020|[Valid Parentheses](./leetcode_myself/020.cpp)| stack |time O(N) space O(N)|~0 100%
 |021|[Merge Two Sorted Lists](./leetcode_myself/021.cpp)| list |time O(N) space O(N)|4ms 100%

@@ -27,9 +27,8 @@ char *longestPalindrome(char *s) {
     free(pNN);
     pNN = NULL;
     char *strResult = (char *)malloc(maxL + 1);
-    if (strResult == NULL) {
-        return NULL;
-    }
+    if (strResult == NULL) return NULL;
+
     strncpy(strResult, s + maxleft, maxL);
     strResult[maxL] = '\0';
     return strResult;

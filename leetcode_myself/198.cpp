@@ -13,7 +13,6 @@ class Solution {
         for (int i = 0; i < nums.size(); ++i) {
             dp = max(dp1 + nums[i], dp2 + nums[i]);
             res = max(res, dp);
-
             dp2 = dp1;
             dp1 = dp0;
             dp0 = dp;

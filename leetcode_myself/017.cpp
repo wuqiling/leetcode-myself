@@ -9,6 +9,7 @@ using std::vector;
 class Solution {
    public:
     // dfs
+    // time O(3^n)~O(4^n),space O(n)
     // runtime ~0 100%
     vector<string> letterCombinations(string digits) {
         if (digits.size() == 0) return {};

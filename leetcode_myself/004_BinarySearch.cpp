@@ -6,12 +6,6 @@ using std::cout;
 using std::endl;
 using std::vector;
 
-static const auto io_sync_off = []() {
-  std::ios::sync_with_stdio(false); // dont use scanf and printf after this
-  std::cin.tie(
-      nullptr); // cin will flush if cout is used while cin is tied to cout
-  return nullptr;
-}();
 
 class Solution {
 public:
